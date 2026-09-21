@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://klcombr.github.io/redline/sitemap.xml
