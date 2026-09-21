@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://klcombr.github.io/redline/sitemap.xml
+Sitemap: https://redline-skill.netlify.app/sitemap.xml

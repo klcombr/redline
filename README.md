@@ -67,10 +67,13 @@ O site e a skill foram escritos do zero sobre essas bases — a execução é or
 
 ## SEO / descoberta no Google
 
-Site publicado em **GitHub Pages**: `https://klcombr.github.io/redline/` (público, sem custo).
+URL oficial (canônica): **`https://redline-skill.netlify.app/`** — deploy Netlify a
+partir deste repo (GitHub → Netlify, branch `main`). O GitHub Pages
+(`klcombr.github.io/redline/`) continua no ar como espelho; todas as páginas
+apontam `canonical` para o Netlify, então não há conteúdo duplicado.
 
-- **On-page** — `title`/`description` únicas por página; `canonical`; `meta robots`
-  (`index, follow, max-image-preview:large`); `theme-color`; `author`.
+- **On-page** — `title`/`description` únicas por página; `canonical` (Netlify);
+  `meta robots` (`index, follow, max-image-preview:large`); `theme-color`; `author`.
 - **Open Graph + Twitter Cards** — `og-image.png` (1200×630 gerado com a marca:
   fundo `#05060A`, wordmark Fraunces, linha vermelha, tagline e URL), com
   `og:locale` `en_US` + `og:locale:alternate` `pt_BR`.
@@ -83,9 +86,10 @@ Site publicado em **GitHub Pages**: `https://klcombr.github.io/redline/` (públi
   para iOS.
 - **Idioma** — o site é uma URL só com toggle EN⇄PT em JS (conteúdo EN padrão,
   indexado); por isso não há `hreflang`, mas o par de locale está declarado via OG.
-- **Índice no Google** — o sitemap foi submetido no Search Console para
-  `https://klcombr.github.io/redline/` via Composio (propriedade
-  `google_search_console_usure-ajava`).
+- **Índice no Google** — sitemap submetido no Search Console para
+  `https://redline-skill.netlify.app/` via Composio (conta GSC
+  `google_search_console_usure-ajava`); verificação da propriedade pelo método
+  de arquivo HTML (`google<token>.html` na raiz).
 
 ## Rodar
 
