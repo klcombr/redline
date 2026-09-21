@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>The Field Guide — REDLINE</title>
+<meta name="description" content="The complete REDLINE field guide: the standard, product truth, the three dials, the removal catalogue, the gates, and the seven-phase method.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305060A'/%3E%3Crect x='4' y='15' width='24' height='2' rx='1' fill='%23E3563A'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="aura" aria-hidden="true"><span class="aura__core"></span></div>
+
+<div class="pagefx" aria-hidden="true"><span class="pagefx__word">REDLINE</span></div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+<header class="topbar">
+  <a class="logo" href="index.html" aria-label="REDLINE — home" data-i18n-attr="aria-label">
+    RED<span class="logo__red">LINE</span>
+    <span class="logo__tag">DESIGN DISCIPLINE</span>
+  </a>
+  <nav class="topnav" aria-label="Sections" data-i18n-attr="aria-label">
+    <a href="index.html">Landing</a>
+    <a href="#standard" class="is-active"><span class="n">01</span>Standard</a>
+    <a href="#product"><span class="n">02</span>Product</a>
+    <a href="#dials"><span class="n">03</span>Dials</a>
+    <a href="#catalogue"><span class="n">04</span>Catalogue</a>
+    <a href="#tests"><span class="n">05</span>Tests</a>
+    <a href="#motion"><span class="n">06</span>Motion</a>
+    <a href="#method"><span class="n">07</span>Method</a>
+    <a href="#rules"><span class="n">08</span>Rules</a>
+    <a class="btn btn--primary" href="install.html">Install <span class="arrow">→</span></a>
+  </nav>
+  <button class="langbtn" id="langBtn" type="button" aria-label="Mudar para português">
+    <span class="langbtn__flag langbtn__flag--us" aria-hidden="true"><svg viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg"><rect width="21" height="14" fill="#B22234"/><rect y="2" width="21" height="1" fill="#FFF"/><rect y="4" width="21" height="1" fill="#FFF"/><rect y="6" width="21" height="1" fill="#FFF"/><rect y="8" width="21" height="1" fill="#FFF"/><rect y="10" width="21" height="1" fill="#FFF"/><rect y="12" width="21" height="1" fill="#FFF"/><rect width="8.4" height="7.5" fill="#3C3B6E"/><circle cx="1.2" cy="1.6" r="0.4" fill="#FFF"/><circle cx="3.6" cy="1.6" r="0.4" fill="#FFF"/><circle cx="6" cy="1.6" r="0.4" fill="#FFF"/><circle cx="1.2" cy="4.4" r="0.4" fill="#FFF"/><circle cx="3.6" cy="4.4" r="0.4" fill="#FFF"/><circle cx="6" cy="4.4" r="0.4" fill="#FFF"/></svg></span>
+    <span class="langbtn__flag langbtn__flag--br" aria-hidden="true"><svg viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg"><rect width="21" height="14" fill="#009C3B"/><path d="M10.5 1.75 19.25 7 10.5 12.25 1.75 7Z" fill="#FFDF00"/><circle cx="10.5" cy="7" r="3.6" fill="#002776"/><path d="M6.3 9.7 14.7 5.3 15.6 6.6 7.2 11Z" fill="#FFF"/></svg></span>
+    <span class="langbtn__code" data-langcode>EN</span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- ══════════ MASTHEAD ══════════ -->
+  <header class="masthead">
+    <div class="wrap masthead__grid">
+      <div>
+        <p class="eyebrow"><span class="red">FIELD GUIDE № 01</span> · v1.2 · WORKING DRAFT</p>
+        <h1>The full discipline,<br>on one page<span class="period">.</span></h1>
+        <p class="sub">Every rule below obeys the discipline. Nothing on this page was added to fill space.</p>
+        <div class="guidemeta" style="margin-top:26px">
+          <span>13 rules</span><span>26 anti-patterns</span><span>7 steps</span><span>2 gates</span><span>GSAP 8 · Three 10</span><span>0 invented facts</span>
+        </div>
+      </div>
+      <div class="glass masthead__meta">
+        <div><span class="k">Edition</span><span class="v">Field guide № 01</span></div>
+        <div><span class="k">Subject</span><span class="v">Web interface design</span></div>
+        <div><span class="k">Status</span><span class="v">Working draft</span></div>
+        <div><span class="k">Content</span><span class="v">The skill text itself</span></div>
+      </div>
+    </div>
+  </header>
+
+  <hr class="band">
+
+  <!-- ══════════ §1 STANDARD ══════════ -->
+  <section class="sec" id="standard" data-spy>
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 1</span>
+        <h2 class="sec__title">The standard</h2>
+        <p class="sec__note">The core principle. Everything below follows from this.</p>
+      </div>
+      <p class="sec__lead">Design from the product, the task, the content, the brand, the environment, the interaction — not from a collection of fashionable UI patterns.</p>
+      <div class="principles">
+        <div class="principles__row">
+          <span class="principles__no">1</span>
+          <span class="principles__term" data-i18n="t.var">Specific <span class="cmp">&gt;</span> trendy</span>
+          <span class="principles__why">Design from the product, the task, the content — not from a collection of fashionable patterns.</span>
+        </div>
+        <div class="principles__row">
+          <span class="principles__no">2</span>
+          <span class="principles__term" data-i18n="t.pur">Purpose <span class="cmp">&gt;</span> decoration</span>
+          <span class="principles__why">Every significant visual decision must have a reason. No job, no place.</span>
+        </div>
+        <div class="principles__row">
+          <span class="principles__no">3</span>
+          <span class="principles__term" data-i18n="t.cla">Clarity <span class="cmp">&gt;</span> complexity</span>
+          <span class="principles__why">What should the user notice first, second, third? Design around that order.</span>
+        </div>
+        <div class="principles__row">
+          <span class="principles__no">4</span>
+          <span class="principles__term" data-i18n="t.ide">Identity <span class="cmp">&gt;</span> template</span>
+          <span class="principles__why">Still correct with another company&rsquo;s logo and copy? Then it is too generic.</span>
+        </div>
+        <div class="principles__row">
+          <span class="principles__no">5</span>
+          <span class="principles__term" data-i18n="t.hie">Hierarchy <span class="cmp">&gt;</span> ornament</span>
+          <span class="principles__why">Primary attention, secondary information, supporting detail. If everything is emphasized, nothing is.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ §2 PRODUCT ══════════ -->
+  <section class="sec" id="product" data-spy>
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 2</span>
+        <h2 class="sec__title">Know the product</h2>
+        <p class="sec__note">Fact discipline. Missing content is a constraint, not a licence to decorate.</p>
+      </div>
+      <div class="hero__grid">
+        <div>
+          <p class="sec__lead">Before designing, determine the minimum necessary product truth. Answer these seven questions:</p>
+          <div class="questions">
+            <div class="questions__row" style="display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding-block:10px;border-bottom:1px solid var(--stroke)">
+              <span class="q-no">1</span><span class="q-text">What is the product?</span>
+            </div>
+            <div class="questions__row" style="display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding-block:10px;border-bottom:1px solid var(--stroke)">
+              <span class="q-no">2</span><span class="q-text">Who is using it?</span>
+            </div>
+            <div class="questions__row" style="display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding-block:10px;border-bottom:1px solid var(--stroke)">
+              <span class="q-no">3</span><span class="q-text">What is the primary user goal?</span>
+            </div>
+            <div class="questions__row" style="display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding-block:10px;border-bottom:1px solid var(--stroke)">
+              <span class="q-no">4</span><span class="q-text">What action matters most?</span>
+            </div>
+            <div class="questions__row" style="display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding-block:10px;border-bottom:1px solid var(--stroke)">
+              <span class="q-no">5</span><span class="q-text">What information needs the most attention?</span>
+            </div>
+            <div class="questions__row" style="display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding-block:10px;border-bottom:1px solid var(--stroke)">
+              <span class="q-no">6</span><span class="q-text">What makes this product different?</span>
+            </div>
+            <div class="questions__row" style="display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding-block:10px;border-bottom:1px solid var(--stroke)">
+              <span class="q-no">7</span><span class="q-text">What constraints exist?</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="stamp" role="note" aria-label="Do not invent" data-i18n-attr="aria-label">
+            <p class="stamp__title">Do not invent</p>
+            <p class="stamp__list">statistics · customers · testimonials · reviews · partnerships · features · capabilities · claims · product metrics</p>
+            <p class="stamp__foot">If information is missing, design around what is actually known. Do not compensate for missing content by adding decorative UI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ §3 DIALS ══════════ -->
+  <section class="sec" id="dials" data-spy>
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 3</span>
+        <h2 class="sec__title">Three dials</h2>
+        <p class="sec__note">Dial values follow the product. Never raise them just to look impressive.</p>
+      </div>
+      <p class="sec__lead">Not every interface is spacious. Not every dashboard is dense. The dials are set by the task, and REDLINE enforces the setting.</p>
+      <div class="dials">
+        <article class="glass dial">
+          <h3 class="dial__name">Variance</h3>
+          <div class="dial__scale">
+            <span class="low">conventional · stable · predictable</span>
+            <span>asymmetric · editorial · unusual composition</span>
+          </div>
+          <div class="dial__ruler" aria-hidden="true"></div>
+          <p class="dial__guide">Composition, not decoration</p>
+        </article>
+        <article class="glass dial">
+          <h3 class="dial__name">Motion</h3>
+          <div class="dial__scale">
+            <span class="low">feedback only · small transitions</span>
+            <span>immersive interaction · scroll choreography</span>
+          </div>
+          <div class="dial__ruler" aria-hidden="true"></div>
+          <p class="dial__guide">Movement must communicate</p>
+        </article>
+        <article class="glass dial">
+          <h3 class="dial__name">Density</h3>
+          <div class="dial__scale">
+            <span class="low">presentation · marketing · storytelling</span>
+            <span>dashboards · tools · professional interfaces</span>
+          </div>
+          <div class="dial__ruler" aria-hidden="true"></div>
+          <p class="dial__guide">Follow the task, not the fashion</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ §4 CATALOGUE ══════════ -->
+  <section class="sec" id="catalogue" data-spy>
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 4</span>
+        <h2 class="sec__title">The removal catalogue</h2>
+        <p class="sec__note">Strikethrough = delete. Hover an item to reconsider it.</p>
+      </div>
+      <p class="sec__lead">Patterns to avoid unless the product genuinely requires them. The burden of proof sits with the pattern — and 26 of them have the burden.</p>
+      <div class="catalogue-grid">
+        <div>
+          <h3>A · Layout</h3>
+          <ul class="slop">
+            <li>Generic hero + CTA + mockup</li>
+            <li>Identical centered landing pages</li>
+            <li>Excessive cards</li>
+            <li>Card-inside-card layouts</li>
+            <li>Uniform card grids</li>
+            <li>Oversized dashboard mockups</li>
+            <li>Repetitive section layouts</li>
+            <li>Components added only to fill whitespace</li>
+          </ul>
+        </div>
+        <div>
+          <h3>B · Decoration</h3>
+          <ul class="slop">
+            <li>Random gradients</li>
+            <li>Decorative glassmorphism</li>
+            <li>Excessive blur</li>
+            <li>Excessive shadows</li>
+            <li>Excessive glow</li>
+            <li>Excessive animation</li>
+            <li>Floating blobs</li>
+            <li>Arbitrary abstract shapes</li>
+            <li>Fake &ldquo;3D&rdquo; objects</li>
+          </ul>
+        </div>
+        <div>
+          <h3>C · Detail</h3>
+          <ul class="slop">
+            <li>Unnecessary rounded rectangles</li>
+            <li>Excessive pills</li>
+            <li>Badge spam</li>
+            <li>Icon spam</li>
+            <li>Stock-looking illustrations</li>
+            <li>AI-generated decorative imagery without art direction</li>
+          </ul>
+        </div>
+        <div>
+          <h3>D · Copy &amp; claims</h3>
+          <ul class="slop">
+            <li>Generic SaaS copy</li>
+            <li>Meaningless statistics</li>
+            <li>Giant headings with no structural purpose</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ STATEMENT ══════════ -->
+  <section class="statement">
+    <div class="wrap">
+      <h2 class="statement__line"><span class="s-word">Remove</span> <span class="s-word">before</span> <span class="s-word">adding</span><span class="period">.</span></h2>
+      <p class="statement__sub">If removing it changes nothing about understanding or interaction, remove it.</p>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ §5 TESTS ══════════ -->
+  <section class="sec" id="tests" data-spy>
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 5</span>
+        <h2 class="sec__title">The two gates</h2>
+        <p class="sec__note">Both run before shipping. No exceptions.</p>
+      </div>
+      <div class="tests">
+        <article class="glass test">
+          <p class="test__label">Gate 01 · Removal</p>
+          <h3 class="test__name">If I remove this, does the product become harder to understand, use, navigate, or recognize?</h3>
+          <p class="test__ans">If no — remove it. For every unusual element, the same question: what specific product reason justifies this? No good answer, do not add it.</p>
+        </article>
+        <article class="glass test">
+          <p class="test__label">Gate 02 · Template</p>
+          <h3 class="test__name">Replace the logo and copy with another company&rsquo;s. Does it still feel correct?</h3>
+          <p class="test__ans">If yes, the design is too generic. Do not fix with decoration — change composition, typography, hierarchy, interaction, content structure, visual language.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ §6 MOTION + GSAP PACK ══════════ -->
+  <section class="sec" id="motion" data-spy>
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 6</span>
+        <h2 class="sec__title">Motion &amp; 3D, with the packs</h2>
+        <p class="sec__note">GSAP for motion, Three.js for 3D. The brief decides which.</p>
+      </div>
+      <p class="sec__lead" data-i18n="g6.lead">The dials are set by the task — and the brief sets the dials. Asked for animated, REDLINE ships the eight official GSAP skills and the page-transition pattern so the implementation is correct: scrubbed, registered once, cleaned up on unmount, respectful of <code class="inline-code">prefers-reduced-motion</code>. Asked for 3D, it ships the ten official Three.js skills for real scenes. This very page redlines the statement above with one scroll-scrubbed ScrollTrigger — and every link between pages sweeps through the transition overlay.</p>
+      <div class="gskills">
+        <div class="gskill">
+          <span class="gskill__name">gsap-core</span>
+          <span class="gskill__do">Core API — gsap.to/from/fromTo, eases, staggers, defaults.</span>
+          <span class="gskill__when">Any GSAP work starts here; matchMedia for reduced-motion.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">gsap-timeline</span>
+          <span class="gskill__do">Choreographed sequences — position parameter, nesting, playback.</span>
+          <span class="gskill__when">Loads when order matters.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">gsap-scrolltrigger</span>
+          <span class="gskill__do">Scroll-linked animation, pinning, scrub, triggers.</span>
+          <span class="gskill__when">Loads when the page answers to the scroll.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">gsap-react</span>
+          <span class="gskill__do">useGSAP hook, context, cleanup on unmount, refs.</span>
+          <span class="gskill__when">Loads on React / Next.js.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">gsap-frameworks</span>
+          <span class="gskill__do">Vue, Svelte &amp; co — lifecycle, scoping, onDestroy cleanup.</span>
+          <span class="gskill__when">Loads outside React.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">gsap-plugins</span>
+          <span class="gskill__do">Flip, SplitText, MorphSVG, MotionPath, Draggable, CustomEase&hellip;</span>
+          <span class="gskill__when">Loads when a tween needs a plugin — register once.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">gsap-performance</span>
+          <span class="gskill__do">Transforms only, no layout thrash, mindful will-change, 60fps.</span>
+          <span class="gskill__when">Loads when it must not jank.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">gsap-utils</span>
+          <span class="gskill__do">clamp, mapRange, normalize, interpolate, snap, wrap, pipe.</span>
+          <span class="gskill__when">Loads when values need mapping, not magic numbers.</span>
+        </div>
+      </div>
+      <p class="eyebrow packsub"><span class="red">THREE.JS</span> · 3D — ONLY WHEN THE BRIEF ASKS</p>
+      <div class="gskills">
+        <div class="gskill">
+          <span class="gskill__name">threejs-fundamentals</span>
+          <span class="gskill__do">Scene, camera, renderer, Object3D hierarchy, coordinate systems.</span>
+          <span class="gskill__when">Every 3D scene starts here.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">threejs-geometry</span>
+          <span class="gskill__do">Built-in shapes, BufferGeometry, custom geometry, instancing.</span>
+          <span class="gskill__when">Loads when the scene needs shape.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">threejs-materials</span>
+          <span class="gskill__do">PBR, phong, basic, shader materials — properties and tuning.</span>
+          <span class="gskill__when">Loads when surfaces need a look.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">threejs-textures</span>
+          <span class="gskill__do">Texture types, UV mapping, environment maps, colour spaces.</span>
+          <span class="gskill__when">Loads when the surface needs detail.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">threejs-lighting</span>
+          <span class="gskill__do">Light types, shadows, environment light, lighting performance.</span>
+          <span class="gskill__when">Loads when the scene needs depth.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">threejs-shaders</span>
+          <span class="gskill__do">GLSL, ShaderMaterial, uniforms, custom visual effects.</span>
+          <span class="gskill__when">Loads when stock materials are not enough.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">threejs-loaders</span>
+          <span class="gskill__do">GLTF, textures, HDR, async patterns, loading progress.</span>
+          <span class="gskill__when">Loads when there are assets to load.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">threejs-animation</span>
+          <span class="gskill__do">Keyframes, skeletal animation, morph targets, mixing.</span>
+          <span class="gskill__when">Loads when the scene moves.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">threejs-interaction</span>
+          <span class="gskill__do">Raycasting, controls, mouse/touch input, object selection.</span>
+          <span class="gskill__when">Loads when the scene answers to the user.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">threejs-postprocessing</span>
+          <span class="gskill__do">EffectComposer, bloom, DOF, screen-space grading.</span>
+          <span class="gskill__when">Loads when the frame needs a finish.</span>
+        </div>
+      </div>
+      <div class="motionrule">
+        <span>Ask the dial first</span>
+        <span>CSS before JS</span>
+        <span>Register plugins once</span>
+        <span>Cleanup on unmount</span>
+        <span><span class="red">matchMedia</span> down for reduced-motion</span>
+        <span>No looping decoration</span>
+        <span>3D only when asked</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ §7 METHOD ══════════ -->
+  <section class="sec" id="method" data-spy>
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 7</span>
+        <h2 class="sec__title">The method</h2>
+        <p class="sec__note">Shape before code. The page is one composition.</p>
+      </div>
+      <div class="phases">
+        <div class="phases__row"><span class="phases__no">01</span><span class="phases__name">Understand</span><span class="phases__gloss">Product, user, task, content, constraints.</span></div>
+        <div class="phases__row"><span class="phases__no">02</span><span class="phases__name">Shape</span><span class="phases__gloss">Hierarchy, composition, navigation, interaction, responsive behaviour — before decorative details.</span></div>
+        <div class="phases__row"><span class="phases__no">03</span><span class="phases__name">Establish</span><span class="phases__gloss">Typography, colour, geometry, spacing, density, variance, motion.</span></div>
+        <div class="phases__row"><span class="phases__no">04</span><span class="phases__name">Build</span><span class="phases__gloss">Semantic structure and reusable primitives.</span></div>
+        <div class="phases__row"><span class="phases__no">05</span><span class="phases__name">Refine</span><span class="phases__gloss">Hierarchy, spacing, typography, alignment, states, motion, responsive behaviour.</span></div>
+        <div class="phases__row"><span class="phases__no">06</span><span class="phases__name">Audit</span><span class="phases__gloss">Usability, accessibility, responsive behaviour, performance, consistency, content accuracy, visual hierarchy.</span></div>
+        <div class="phases__row"><span class="phases__no">07</span><span class="phases__name">Distill</span><span class="phases__gloss">Remove anything that does not contribute. Do not add more because the page feels empty.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ §7 RULES ══════════ -->
+  <section class="sec" id="rules" data-spy>
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 8</span>
+        <h2 class="sec__title">The final rules</h2>
+        <p class="sec__note">Adjectives are not goals. They arrive on their own — or not at all.</p>
+      </div>
+      <div class="rules">
+        <div class="glass test">
+          <p class="test__label">Optimize for</p>
+          <ul class="glist">
+            <li>Clarity</li>
+            <li>Hierarchy</li>
+            <li>Usability</li>
+            <li>Identity</li>
+            <li>Consistency</li>
+            <li>Intentionality</li>
+            <li>Product truth</li>
+          </ul>
+        </div>
+        <div class="glass test">
+          <p class="test__label">Never optimize for</p>
+          <ul class="glist glist--strike">
+            <li><s>Modern</s></li>
+            <li><s>Beautiful</s></li>
+            <li><s>Premium</s></li>
+            <li><s>Futuristic</s></li>
+            <li><s>Trendy</s></li>
+            <li><s>Clean</s></li>
+          </ul>
+        </div>
+      </div>
+      <blockquote class="maxim">
+        <p data-i18n="maxim">Specific <span class="cmp">&gt;</span> generic. &nbsp;Purpose <span class="cmp">&gt;</span> decoration. &nbsp;Hierarchy <span class="cmp">&gt;</span> spectacle. &nbsp;Product identity <span class="cmp">&gt;</span> template. &nbsp;Simple implementation <span class="cmp">&gt;</span> unnecessary complexity. &nbsp;Remove before adding.</p>
+      </blockquote>
+    </div>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <nav class="colophon__nav" aria-label="Footer" data-i18n-attr="aria-label">
+      <a href="index.html">Landing</a>
+      <a href="guide.html">Field guide</a>
+      <a href="install.html">Install</a>
+      <a href="redline-gsap.zip" download>Download the pack (.zip)</a>
+      <a href="REDLINE-SKILL.md" download>Download REDLINE-SKILL.md</a>
+    </nav>
+    <p class="colophon__brand">RED<span class="redline">LINE</span> — nothing on this page was added to fill space</p>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

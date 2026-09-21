@@ -1,0 +1,72 @@
+# REDLINE — site oficial da skill
+
+Sistema de 3 páginas para divulgar a skill **REDLINE** (ex-"Slopless Site
+Design"), em **liquid glass**, com os **packs GSAP** (motion) e **Three.js**
+(3D) oficiais integrados. O site inteiro é vivo: transições entre páginas,
+entrances, reveals, marquee, parallax e scrub — tudo com GSAP, sempre com
+fallback estático completo.
+
+## Páginas
+
+| Página | Conteúdo |
+| --- | --- |
+| `index.html` | Landing — hero com skill card de vidro, "the standard" (5 comparações), 3 dials, catálogo de remoção (marquee), **motion & 3D packs** (8 GSAP + 10 Three.js), method (7 fases), CTA de instalação com terminal |
+| `guide.html` | Field guide completo — §1–§8: standard, product truth (carimbo DO NOT INVENT), dials, catálogo 26 itens, gates, **motion & 3D packs**, method, regras finais |
+| `install.html` | Instalação passo a passo (opencode, Hermes, Claude) + download do pacote |
+
+## Sistema compartilhado
+
+- `styles.css` — tokens, liquid glass (`.glass` + estados idle/hover/active do `.langbtn`), aurora + grain, marquee, terminal, seção de packs, **overlay de transição** (`.pagefx`), responsive, reduced-motion
+- `script.js` — o motor animado (GSAP):
+  - **page transitions** entre as 3 páginas — sweep do overlay vermelho com wordmark `REDLINE`; saída (conteúdo some + painel fecha) e entrada (painel abre + conteúdo entra);
+  - **entrances** de hero/masthead/install-hero (stagger);
+  - **reveals** no scroll via `ScrollTrigger.batch` — elementos pré-escondidos (`opacity:0`) antes do scroll, animam **um pouco depois** de entrar na viewport (`start: 'top 84%'`, `delay: 0.18`, `once` por entrada); cards com stagger;
+  - **marquee** com loop GSAP (xPercent, pausa no hover);
+  - **statement** "Remove before adding." riscada de vermelho por **ScrollTrigger scrub**;
+  - **parallax** do skill card / masthead + deriva da aurora;
+  - progresso de leitura + scrollspy (estado, sem movimento).
+- favicon novo: **uma linha vermelha** (SVG data-URI inline) nas 3 páginas — substitui o antigo "RED>"
+- **Idioma EN ⇄ PT** — botão de vidro líquido (`.langbtn`) no topbar com bandeiras EUA/Brasil: mostra a bandeira dos EUA primeiro; ao ativar, troca para a bandeira do Brasil e traduz o site inteiro para PT-BR (toggle de volta para EN). Detalhes:
+  - Motor em `script.js`: `data-i18n` (innerHTML completo PT) para elementos com markup misto; `data-i18n-attr` para atributos (`aria-label`, `<html lang>`, `<title>`/meta por página via mapa `PAGES`); plain text via TreeWalker casando o texto exato (ignora `code/pre/script/style/[data-i18n]`).
+  - Conteúdo técnico fica canônico (nomes de skills GSAP/Three.js, IDs, código, `REDLINE-SKILL.md`, dials "Motion/Density") — só o copy do site traduz.
+  - Persistência em `localStorage['rl-lang']`; sobrevive a reload e navegação entre páginas; `ScrollTrigger.refresh()` após o swap; reverter para EN restaura o HTML original (snapshots).
+  - `window.__rl = { lang, reveal, setLang }` exposto para testes.
+- `vendor/` — `gsap.min.js` + `ScrollTrigger.min.js` **3.13.0** locais (offline, sem CDN); arquivos minificados do GSAP, sob a licença da GreenSock (greensock.com/licensing)
+- `REDLINE-SKILL.md` — a skill **v1.2** (packs GSAP + Three.js, philosophy "the brief is the law"), servida para download
+- `redline-gsap.zip` — REDLINE + **18 skills** (8 GSAP + 10 Three.js), pacote para qualquer agente (também em `~/Downloads/redline-gsap.zip`)
+
+## Créditos
+
+REDLINE agrega e consolida bases existentes — crédito integral a seus autores
+e comunidades:
+
+- **impeccable** — skill de design/redesign de interfaces (web, produtos, design systems): o DNA de refinamento, crítica e polimento de UI do REDLINE.
+- **tasteskill (design-taste-frontend)** — skill anti-slop para landing pages, portfólios e redesigns: a origem da disciplina contra interfaces genéricas.
+- **GSAP (8 skills oficiais)** — o pacote oficial de motion embutido: core, timeline, scrolltrigger, react, frameworks, plugins, performance, utils.
+- **Three.js (10 skills oficiais)** — o pacote oficial de 3D embutido: fundamentals, geometry, materials, textures, lighting, shaders, loaders, animation, interaction, postprocessing.
+
+O site e a skill foram escritos do zero sobre essas bases — a execução é original.
+
+## Como o sistema degrada (regras da própria skill)
+
+- **Sem GSAP (JS bloqueado/erro):** navegação por links normais, statement
+  estática com linhas desenhadas (`statement--manual`), marquee parado,
+  conteúdo 100% visível — zero movimento, zero quebra.
+- **`prefers-reduced-motion`:** mesma coisa — navegação direta (sem overlay),
+  nada de entrance/reveal/marquee/parallax/scrub; o botão de idioma mantém o
+  toggle funcional mas sem animações (deriva `glassIdle` desligada).
+- **Transição cancelável:** links externos, `title="_blank"`, `download` e
+  âncoras `#` nunca são interceptados; `sessionStorage` passa o estado da
+  entrada e é consumido uma única vez.
+
+## Packs na skill (v1.2)
+
+- **GSAP (8):** core, timeline, scrolltrigger, react, frameworks, plugins, performance, utils.
+- **Three.js (10):** fundamentals, geometry, materials, textures, lighting, shaders, loaders, animation, interaction, postprocessing.
+- **O brief manda:** pediu animado → GSAP em tudo (transições, reveals, marquee); pediu 3D → Three.js de verdade; pediu seco → seco. A disciplina polida a execução, nunca sobrepõe o pedido.
+
+## Rodar
+
+```sh
+python3 -m http.server 8742   # em ~/redline  (8743 serve capturas de teste em /tmp/opencode/fx-shots)
+```

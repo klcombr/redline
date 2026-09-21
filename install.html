@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Install — REDLINE</title>
+<meta name="description" content="Install the REDLINE design discipline skill into opencode, Claude, Hermes, or any agent that reads SKILL.md files.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305060A'/%3E%3Crect x='4' y='15' width='24' height='2' rx='1' fill='%23E3563A'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="aura" aria-hidden="true"><span class="aura__core"></span></div>
+
+<div class="pagefx" aria-hidden="true"><span class="pagefx__word">REDLINE</span></div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+<header class="topbar">
+  <a class="logo" href="index.html" aria-label="REDLINE — home" data-i18n-attr="aria-label">
+    RED<span class="logo__red">LINE</span>
+    <span class="logo__tag">DESIGN DISCIPLINE</span>
+  </a>
+  <nav class="topnav" aria-label="Sections" data-i18n-attr="aria-label">
+    <a href="index.html">Landing</a>
+    <a href="guide.html">Guide</a>
+    <a href="#steps"><span class="n">01</span>Steps</a>
+    <a href="#hermes"><span class="n">02</span>Send to Hermes</a>
+    <a href="#verify"><span class="n">03</span>Verify</a>
+    <a class="btn btn--primary" href="redline-gsap.zip" download>Download pack <span class="arrow">↓</span></a>
+  </nav>
+  <button class="langbtn" id="langBtn" type="button" aria-label="Mudar para português">
+    <span class="langbtn__flag langbtn__flag--us" aria-hidden="true"><svg viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg"><rect width="21" height="14" fill="#B22234"/><rect y="2" width="21" height="1" fill="#FFF"/><rect y="4" width="21" height="1" fill="#FFF"/><rect y="6" width="21" height="1" fill="#FFF"/><rect y="8" width="21" height="1" fill="#FFF"/><rect y="10" width="21" height="1" fill="#FFF"/><rect y="12" width="21" height="1" fill="#FFF"/><rect width="8.4" height="7.5" fill="#3C3B6E"/><circle cx="1.2" cy="1.6" r="0.4" fill="#FFF"/><circle cx="3.6" cy="1.6" r="0.4" fill="#FFF"/><circle cx="6" cy="1.6" r="0.4" fill="#FFF"/><circle cx="1.2" cy="4.4" r="0.4" fill="#FFF"/><circle cx="3.6" cy="4.4" r="0.4" fill="#FFF"/><circle cx="6" cy="4.4" r="0.4" fill="#FFF"/></svg></span>
+    <span class="langbtn__flag langbtn__flag--br" aria-hidden="true"><svg viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg"><rect width="21" height="14" fill="#009C3B"/><path d="M10.5 1.75 19.25 7 10.5 12.25 1.75 7Z" fill="#FFDF00"/><circle cx="10.5" cy="7" r="3.6" fill="#002776"/><path d="M6.3 9.7 14.7 5.3 15.6 6.6 7.2 11Z" fill="#FFF"/></svg></span>
+    <span class="langbtn__code" data-langcode>EN</span>
+  </button>
+</header>
+
+<main id="main">
+
+  <section class="install-hero">
+    <div class="wrap">
+      <p class="eyebrow"><span class="red">INSTALL</span> · ONE FILE · NO DEPENDENCIES</p>
+      <h1>Copy a file. Redline everything after<span class="period">.</span></h1>
+      <p class="sub">REDLINE installs anywhere an agent can read markdown. Skip only the steps that do not apply to your setup — the file does the heavy lifting either way.</p>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ STEPS ══════════ -->
+  <section class="sec" id="steps">
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 1</span>
+        <h2 class="sec__title" data-i18n="sec.install">Install</h2>
+        <p class="sec__note">Three steps. The first one is downloading the file.</p>
+      </div>
+
+      <div class="dsteps">
+        <article class="glass dstep">
+          <span class="dstep__no">01</span>
+          <div>
+            <h3>Get the pack</h3>
+            <p data-i18n="d1.p"><code class="inline-code">redline-gsap.zip</code> — the discipline plus the two packs: eight official GSAP skills and ten official Three.js skills, ready to drop in. Plain markdown, nothing to build. Or take just the skill file from your opencode install at <code class="inline-code">~/.config/opencode/skills/redline/SKILL.md</code>.</p>
+            <div style="margin-top:16px; display:flex; flex-wrap:wrap; gap:10px">
+              <a class="btn btn--primary" href="redline-gsap.zip" download>Download the pack (.zip) <span class="arrow">↓</span></a>
+              <a class="btn" href="REDLINE-SKILL.md" download>Just REDLINE-SKILL.md</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass dstep">
+          <span class="dstep__no">02</span>
+          <div>
+            <h3>Put it in the agent&rsquo;s skills folder</h3>
+            <p data-i18n="d2.p">Any agent that loads <code class="inline-code">SKILL.md</code> files works. Examples:</p>
+            <div class="terminal" style="margin-top:14px">
+              <div class="terminal__bar"><i></i><i></i><i></i><span>opencode · bash</span></div>
+              <div class="terminal__body">
+                <div><span class="p">$</span> unzip redline-gsap.zip <span class="c"># discipline + GSAP + Three.js packs</span></div>
+                <div><span class="p">$</span> mkdir -p ~/.config/opencode/skills/redline</div>
+                <div><span class="p">$</span> cp REDLINE-SKILL.md ~/.config/opencode/skills/redline/SKILL.md</div>
+                <div><span class="p">$</span> cp -r skills/gsap-* skills/threejs-* ~/.config/opencode/skills/</div>
+                <div><span class="p">$</span> <span class="c"># register each in the lazy-load index (one line):</span></div>
+                <div><span class="p">$</span> <span class="hl">~/.local/share/opencode/skills-index.md</span> → add rows</div>
+              </div>
+            </div>
+            <p style="margin-top:12px" data-i18n="d2.p2">For other agents — Claude Code, Hermes, Cursor, custom pipelines — same idea: <code class="inline-code">REDLINE-SKILL.md</code> goes wherever that agent reads its skill documents, and each <code class="inline-code">skills/gsap-*</code> and <code class="inline-code">skills/threejs-*</code> folder follows the same rule. If the agent accepts plain markdown prompts, paste the file contents directly — the discipline needs no runtime.</p>
+          </div>
+        </article>
+
+        <article class="glass dstep">
+          <span class="dstep__no">03</span>
+          <div>
+            <h3>Restart the session (one time)</h3>
+            <p>Skills are discovered when the agent session starts. After that, just start any design task — the agent loads the discipline when the task matches its description.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ SEND TO HERMES ══════════ -->
+  <section class="sec" id="hermes">
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 2</span>
+        <h2 class="sec__title">Send to Hermes</h2>
+        <p class="sec__note">Anything you can put a SKILL.md in, REDLINE works in.</p>
+      </div>
+      <div class="glass installbox">
+        <div class="installbox__left">
+          <p class="eyebrow"><span class="red">HERMES</span> · SAME FILE</p>
+          <h2>One pack, both agents<span class="period">.</span></h2>
+          <p>You do not need a different version for Hermes. Send the same zip:</p>
+          <div class="installbox__steps">
+            <div><span class="n">→</span><span data-i18n="hs1"><code class="inline-code">redline-gsap.zip</code> — REDLINE + 8 GSAP + 10 Three.js skills, one archive (also in <code class="inline-code">~/Downloads</code>)</span></div>
+            <div><span class="n">→</span><span data-i18n="hs2">Unzip into Hermes&rsquo; skills folder — <code class="inline-code">redline/SKILL.md</code> + <code class="inline-code">gsap-*/SKILL.md</code> + <code class="inline-code">threejs-*/SKILL.md</code></span></div>
+            <div><span class="n">→</span><span data-i18n="hs3">Register each skill in its index (if it has one), then restart the session</span></div>
+          </div>
+        </div>
+        <div class="terminal" role="img" aria-label="Terminal showing what to send to Hermes" data-i18n-attr="aria-label">
+          <div class="terminal__bar"><i></i><i></i><i></i><span>to: hermes</span></div>
+          <div class="terminal__body">
+            <div><span class="c"># send this</span></div>
+            <div><span class="hl">redline-gsap.zip</span> · 19 skills inside</div>
+            <div>&nbsp;</div>
+            <div><span class="c"># then one instruction:</span></div>
+            <div style="color:var(--ink)">“Install REDLINE plus its GSAP and Three.js packs. REDLINE is</div>
+            <div style="color:var(--ink)">a design discipline: read it before any interface</div>
+            <div style="color:var(--ink)">design, and apply its gates to every result —</div>
+            <div style="color:var(--ink)">motion and 3D included.”</div>
+            <div>&nbsp;</div>
+            <div><span class="p">$</span> <span class="caret">▮</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="band">
+
+  <!-- ══════════ VERIFY ══════════ -->
+  <section class="sec" id="verify">
+    <div class="wrap">
+      <div class="sec__head">
+        <span class="sec__no">§ 3</span>
+        <h2 class="sec__title">Verify it took</h2>
+        <p class="sec__note">The discipline proves itself on the first job.</p>
+      </div>
+      <div class="tests">
+        <article class="glass test">
+          <p class="test__label">Sanity prompt</p>
+          <h3 class="test__name">&ldquo;Design a landing page for my product. Use the REDLINE discipline.&rdquo;</h3>
+          <p class="test__ans">In working order, the agent will ask about your product before touching CSS — and will refuse to invent testimonials, stats, or features you did not provide.</p>
+        </article>
+        <article class="glass test">
+          <p class="test__label">Tell-tale</p>
+          <h3 class="test__name">It asks the seven product questions before the first pixel<span class="period">.</span></h3>
+          <p class="test__ans">If it immediately starts writing cards and gradients, it did not load the skill. Check the skills folder and index, restart, and try again.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <nav class="colophon__nav" aria-label="Footer" data-i18n-attr="aria-label">
+      <a href="index.html">Landing</a>
+      <a href="guide.html">Field guide</a>
+      <a href="install.html">Install</a>
+      <a href="redline-gsap.zip" download>Download the pack (.zip)</a>
+      <a href="REDLINE-SKILL.md" download>Download REDLINE-SKILL.md</a>
+    </nav>
+    <p class="colophon__brand">RED<span class="redline">LINE</span> — one zip, any agent, every interface</p>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
