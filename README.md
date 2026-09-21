@@ -67,13 +67,19 @@ O site e a skill foram escritos do zero sobre essas bases — a execução é or
 
 ## SEO / descoberta no Google
 
-URL oficial (canônica): **`https://redline-skill.netlify.app/`** — deploy Netlify a
-partir deste repo (GitHub → Netlify, branch `main`). O GitHub Pages
-(`klcombr.github.io/redline/`) continua no ar como espelho; todas as páginas
-apontam `canonical` para o Netlify, então não há conteúdo duplicado.
+URL canônica ativa: **`https://klcombr.github.io/redline/`** (GitHub Pages —
+deploy automático via `git push`, sem custo).
 
-- **On-page** — `title`/`description` únicas por página; `canonical` (Netlify);
-  `meta robots` (`index, follow, max-image-preview:large`); `theme-color`; `author`.
+> **Nota Netlify:** o deploy `redline-skill.netlify.app` está **congelado na
+> versão antiga** porque a conta Netlify está com a cota de build esgotada
+> (`Skipped due to account credit usage exceeded`). Quando a cota voltar (reset
+> mensal ou crédito pago), o reverter para a canônica Netlify é só trocar o
+> domínio em 3 lugares: no `canonical` + `og:url`/`og:image`/`twitter:image` dos
+> 3 HTMLs, e nas URLs de `sitemap.xml`/`robots.txt` (o repo já esteve nessa
+> config — commit `0ac653b`).
+
+- **On-page** — `title`/`description` únicas por página; `canonical`; `meta robots`
+  (`index, follow, max-image-preview:large`); `theme-color`; `author`.
 - **Open Graph + Twitter Cards** — `og-image.png` (1200×630 gerado com a marca:
   fundo `#05060A`, wordmark Fraunces, linha vermelha, tagline e URL), com
   `og:locale` `en_US` + `og:locale:alternate` `pt_BR`.
@@ -86,10 +92,21 @@ apontam `canonical` para o Netlify, então não há conteúdo duplicado.
   para iOS.
 - **Idioma** — o site é uma URL só com toggle EN⇄PT em JS (conteúdo EN padrão,
   indexado); por isso não há `hreflang`, mas o par de locale está declarado via OG.
-- **Índice no Google** — sitemap submetido no Search Console para
-  `https://redline-skill.netlify.app/` via Composio (conta GSC
-  `google_search_console_usure-ajava`); verificação da propriedade pelo método
-  de arquivo HTML (`google<token>.html` na raiz).
+
+### Search Console (pendente — passo manual de 2 min)
+
+O Google **não permite criar propriedade via API**; a conta GSC conectada no
+Composio (`google_search_console_usure-ajava`) já tem `klcom.netlify.app` e
+`cognis-beta.vercel.app` verificadas, mas não a URL do site. Para ativar:
+
+1. Abrir [Search Console](https://search.google.com/search-console) com a conta
+   conectada → **Adicionar propriedade** → prefixo de URL →
+   `https://klcombr.github.io/redline/` → método **arquivo HTML**.
+2. Copiar o nome do arquivo gerado (`google<token>.html`) e me passar.
+3. Eu adiciono o arquivo na raiz do repo, faço push (o Pages publica
+   automaticamente) → você clica em **Verificar**.
+4. Aí eu finalizo via Composio: `SUBMIT_SITEMAP` + `GOOGLE_SEARCH_CONSOLE_INSPECT_URL`
+   nas 3 páginas + `LIST_SITEMAPS` para confirmar saúde.
 
 ## Rodar
 
