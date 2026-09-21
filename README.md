@@ -93,20 +93,19 @@ deploy automático via `git push`, sem custo).
 - **Idioma** — o site é uma URL só com toggle EN⇄PT em JS (conteúdo EN padrão,
   indexado); por isso não há `hreflang`, mas o par de locale está declarado via OG.
 
-### Search Console (pendente — passo manual de 2 min)
+### Search Console — ativado ✅
 
-O Google **não permite criar propriedade via API**; a conta GSC conectada no
-Composio (`google_search_console_usure-ajava`) já tem `klcom.netlify.app` e
-`cognis-beta.vercel.app` verificadas, mas não a URL do site. Para ativar:
-
-1. Abrir [Search Console](https://search.google.com/search-console) com a conta
-   conectada → **Adicionar propriedade** → prefixo de URL →
-   `https://klcombr.github.io/redline/` → método **arquivo HTML**.
-2. Copiar o nome do arquivo gerado (`google<token>.html`) e me passar.
-3. Eu adiciono o arquivo na raiz do repo, faço push (o Pages publica
-   automaticamente) → você clica em **Verificar**.
-4. Aí eu finalizo via Composio: `SUBMIT_SITEMAP` + `GOOGLE_SEARCH_CONSOLE_INSPECT_URL`
-   nas 3 páginas + `LIST_SITEMAPS` para confirmar saúde.
+- **Propriedade** `https://klcombr.github.io/redline/` verificada (método arquivo
+  HTML — `google1675b1469fe4ce38.html` na raiz; **não remover o arquivo**).
+- **Sitemap** submetido: `https://klcombr.github.io/redline/sitemap.xml`
+  (`errors: 0`, `warnings: 0` — processamento "pending" é normal logo após envio).
+- **Inspeção** das 3 URLs via API: `URL is unknown to Google` / `NEUTRAL` —
+  esperado para site recém-verificado; o Google descobre o site ao rastrear o
+  sitemap (horas/dias). Para acelerar, clicar em **Solicitar indexação** nas
+  páginas de inspeção do GSC:
+  - https://search.google.com/search-console/inspect?resource_id=https://klcombr.github.io/redline/
+- Dados de **Google Search Analytics** (cliques/impressões) começam a aparecer
+  quando o site for descoberto (empty até lá).
 
 ## Rodar
 
