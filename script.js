@@ -176,7 +176,7 @@
 
     /* ── §4 Motion & 3D ── */
     'Motion & 3D, with the packs': 'Motion e 3D, com os packs',
-    'CSS still first. GSAP for motion, Three.js for 3D. The brief decides which.': 'CSS ainda primeiro. GSAP para motion, Three.js para 3D. O brief decide.',
+    'CSS first when it is enough. Motion, Anime.js, or GSAP for purposeful animation; Three.js when 3D is the brief.': 'CSS primeiro quando basta. Motion, Anime.js ou GSAP para animação com propósito; Three.js quando 3D é o brief.',
     'GSAP for motion, Three.js for 3D. The brief decides which.': 'GSAP para motion, Three.js para 3D. O brief decide.',
     'REDLINE does not force animation — the dial sets the motion, and the brief sets the dial. Asked for animated? Everything that can carry feeling animates, GSAP, done right: transitions between pages, hero reveals, scroll reveals, marquee, parallax. Asked for 3D? Real Three.js — scene, geometry, light, assets, interaction. Asked for dry? Dry. GSAP is 100% free, including every plugin; Three.js is free and open source.': 'A REDLINE não força animação — o dial define o motion, e o brief define o dial. Pediu animado? Tudo que pode carregar sentimento anima, em GSAP, feito direito: transições entre páginas, reveals do hero, reveals de scroll, marquee, parallax. Pediu 3D? Three.js de verdade — cena, geometria, luz, assets, interação. Pediu seco? Seco. GSAP é 100% grátis, incluindo todos os plugins; Three.js é grátis e open source.',
     '· 3D — ONLY WHEN THE BRIEF ASKS': '· 3D — SÓ QUANDO O BRIEF PEDIR',
@@ -284,18 +284,18 @@
     'Liquid glass — requested by the product, used with restraint': 'Vidro líquido — pedido pelo produto, usado com contenção',
     'Radius': 'Raio',
     '22px on glass only — glass needs curvature to refract': '22px só no vidro — vidro precisa de curvatura para refratar',
-    'Everything GSAP — page transitions, reveals, marquee, parallax, scrub; 3D = Three.js pack': 'Tudo em GSAP — transições de página, reveals, marquee, parallax, scrub; 3D = pack Three.js',
+    'Motion · Anime.js · GSAP — routed by the interaction; 3D = Three.js pack': 'Motion · Anime.js · GSAP — roteados pela interação; 3D = pack Three.js',
     'Content': 'Conteúdo',
     'The skill itself — nothing invented': 'A própria skill — nada inventado',
     'Status': 'Status',
-    'v1.2 · packs GSAP + Three.js · transitions in': 'v1.2 · packs GSAP + Three.js · transições ativas',
+    'v2.0 · Motion + Anime.js + GSAP + Three.js · transitions in': 'v2.0 · Motion + Anime.js + GSAP + Three.js · transições ativas',
     '— design discipline, not decoration': ' — disciplina de design, não decoração',
     '— nothing on this page was added to fill space': ' — nada nesta página foi adicionado para preencher espaço',
     '— one zip, any agent, every interface': ' — um zip, qualquer agente, toda interface',
 
     /* ── guide: masthead ── */
     'FIELD GUIDE № 01': 'GUIA DE CAMPO № 01',
-    '· v1.2 · WORKING DRAFT': ' · v1.2 · RASCUNHO DE TRABALHO',
+    '· v2.0 · WORKING DRAFT': ' · v2.0 · RASCUNHO DE TRABALHO',
     'The full discipline,': 'A disciplina completa,',
     'on one page': 'em uma página',
     'Every rule below obeys the discipline. Nothing on this page was added to fill space.': 'Toda regra abaixo obedece à disciplina. Nada nesta página foi adicionado para preencher espaço.',
@@ -346,7 +346,7 @@
 
     /* guide §6 lead — data-i18n="g6.lead" */
     'g6.lead':
-      'Os dials são definidos pela tarefa — e o brief define os dials. Pediu animação, a REDLINE entrega as oito skills oficiais de GSAP e o padrão de transição de página para a implementação sair correta: com scrub, registrada uma vez, com cleanup no unmount, respeitando <code class="inline-code">prefers-reduced-motion</code>. Pediu 3D, entrega as dez skills oficiais de Three.js para cenas reais. Esta própria página redline a frase acima com um ScrollTrigger com scrub — e cada link entre páginas atravessa o overlay de transição.',
+      'Os dials são definidos pela tarefa — e o brief define os dials. A REDLINE roteia mudanças simples para CSS, interfaces orientadas a componentes e gestures para Motion, sequências compactas de DOM/SVG para Anime.js v4, e timelines complexas ou scroll para GSAP. Pediu 3D? Entrega cenas reais com Three.js, cleanup e fallback 2D. Toda rota registra plugins uma vez, limpa no unmount e respeita <code class="inline-code">prefers-reduced-motion</code>.',
 
     /* guide §8 rules + maxim — data-i18n="maxim" */
     'The final rules': 'As regras finais',

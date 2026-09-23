@@ -1,10 +1,10 @@
 # REDLINE — site oficial da skill
 
 Sistema de 3 páginas para divulgar a skill **REDLINE** (ex-"Slopless Site
-Design"), em **liquid glass**, com os **packs GSAP** (motion) e **Three.js**
-(3D) oficiais integrados. O site inteiro é vivo: transições entre páginas,
-entrances, reveals, marquee, parallax e scrub — tudo com GSAP, sempre com
-fallback estático completo.
+Design"), em **liquid glass**, com o roteamento integrado de **Motion**,
+**Anime.js v4**, **GSAP** e **Three.js**. O site inteiro é vivo: transições
+entre páginas, entrances, reveals, marquee, parallax e scrub — tudo com GSAP,
+sempre com fallback estático completo.
 
 ## Páginas
 
@@ -32,8 +32,8 @@ fallback estático completo.
   - Persistência em `localStorage['rl-lang']`; sobrevive a reload e navegação entre páginas; `ScrollTrigger.refresh()` após o swap; reverter para EN restaura o HTML original (snapshots).
   - `window.__rl = { lang, reveal, setLang }` exposto para testes.
 - `vendor/` — `gsap.min.js` + `ScrollTrigger.min.js` **3.13.0** locais (offline, sem CDN); arquivos minificados do GSAP, sob a licença da GreenSock (greensock.com/licensing)
-- `REDLINE-SKILL.md` — a skill **v1.2** (packs GSAP + Three.js, philosophy "the brief is the law"), servida para download
-- `redline-gsap.zip` — REDLINE + **18 skills** (8 GSAP + 10 Three.js), pacote para qualquer agente (também em `~/Downloads/redline-gsap.zip`)
+- `REDLINE-SKILL.md` — a skill **v2.0** (master skill com Motion, Anime.js, GSAP e Three.js), servida para download
+- `redline-gsap.zip` — REDLINE + **20 skills specialist** (Motion, Anime.js, 8 GSAP e 10 Three.js), pacote para qualquer agente
 
 ## Créditos
 
@@ -42,8 +42,10 @@ e comunidades:
 
 - **impeccable** — skill de design/redesign de interfaces (web, produtos, design systems): o DNA de refinamento, crítica e polimento de UI do REDLINE.
 - **tasteskill (design-taste-frontend)** — skill anti-slop para landing pages, portfólios e redesigns: a origem da disciplina contra interfaces genéricas.
-- **GSAP (8 skills oficiais)** — o pacote oficial de motion embutido: core, timeline, scrolltrigger, react, frameworks, plugins, performance, utils.
-- **Three.js (10 skills oficiais)** — o pacote oficial de 3D embutido: fundamentals, geometry, materials, textures, lighting, shaders, loaders, animation, interaction, postprocessing.
+- **Motion** — skill oficial para JavaScript, React, Vue, CSS springs, gestos e auditorias de performance.
+- **Anime.js v4** — skill para DOM, CSS, SVG, timelines, stagger, playback e integração com componentes.
+- **GSAP (8 skills oficiais)** — o pacote oficial de motion: core, timeline, scrolltrigger, react, frameworks, plugins, performance, utils.
+- **Three.js (10 skills oficiais)** — o pacote oficial de 3D: fundamentals, geometry, materials, textures, lighting, shaders, loaders, animation, interaction, postprocessing.
 
 O site e a skill foram escritos do zero sobre essas bases — a execução é original.
 
@@ -59,11 +61,13 @@ O site e a skill foram escritos do zero sobre essas bases — a execução é or
   âncoras `#` nunca são interceptados; `sessionStorage` passa o estado da
   entrada e é consumido uma única vez.
 
-## Packs na skill (v1.2)
+## Packs na skill (v2.0)
 
+- **Motion:** JavaScript, React, Vue, gestos, layout animation, springs, scroll e performance.
+- **Anime.js v4:** DOM, CSS, SVG, JavaScript objects, timelines, stagger e cleanup.
 - **GSAP (8):** core, timeline, scrolltrigger, react, frameworks, plugins, performance, utils.
 - **Three.js (10):** fundamentals, geometry, materials, textures, lighting, shaders, loaders, animation, interaction, postprocessing.
-- **O brief manda:** pediu animado → GSAP em tudo (transições, reveals, marquee); pediu 3D → Three.js de verdade; pediu seco → seco. A disciplina polida a execução, nunca sobrepõe o pedido.
+- **O brief manda:** a skill escolhe a ferramenta certa sem misturar bibliotecas sem necessidade; pediu 3D → Three.js real; pediu seco → seco; pediu animação → Motion, Anime.js ou GSAP conforme a interação.
 
 ## SEO / descoberta no Google
 

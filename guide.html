@@ -111,11 +111,11 @@
   <header class="masthead">
     <div class="wrap masthead__grid">
       <div>
-        <p class="eyebrow"><span class="red">FIELD GUIDE № 01</span> · v1.2 · WORKING DRAFT</p>
+        <p class="eyebrow"><span class="red">FIELD GUIDE № 01</span> · v2.0 · WORKING DRAFT</p>
         <h1>The full discipline,<br>on one page<span class="period">.</span></h1>
         <p class="sub">Every rule below obeys the discipline. Nothing on this page was added to fill space.</p>
         <div class="guidemeta" style="margin-top:26px">
-          <span>13 rules</span><span>26 anti-patterns</span><span>7 steps</span><span>2 gates</span><span>GSAP 8 · Three 10</span><span>0 invented facts</span>
+          <span>13 rules</span><span>26 anti-patterns</span><span>7 steps</span><span>2 gates</span><span>Motion · Anime · GSAP 8 · Three 10</span><span>0 invented facts</span>
         </div>
       </div>
       <div class="glass masthead__meta">
@@ -362,9 +362,22 @@
       <div class="sec__head">
         <span class="sec__no">§ 6</span>
         <h2 class="sec__title">Motion &amp; 3D, with the packs</h2>
-        <p class="sec__note">GSAP for motion, Three.js for 3D. The brief decides which.</p>
+        <p class="sec__note">CSS first when enough. Motion, Anime.js, or GSAP for purposeful animation; Three.js for real 3D.</p>
       </div>
-      <p class="sec__lead" data-i18n="g6.lead">The dials are set by the task — and the brief sets the dials. Asked for animated, REDLINE ships the eight official GSAP skills and the page-transition pattern so the implementation is correct: scrubbed, registered once, cleaned up on unmount, respectful of <code class="inline-code">prefers-reduced-motion</code>. Asked for 3D, it ships the ten official Three.js skills for real scenes. This very page redlines the statement above with one scroll-scrubbed ScrollTrigger — and every link between pages sweeps through the transition overlay.</p>
+      <p class="sec__lead" data-i18n="g6.lead">The dials are set by the task — and the brief sets the dials. REDLINE routes simple state changes to CSS, component-driven UI and gestures to Motion, compact DOM/SVG sequences to Anime.js v4, and complex timelines or scroll choreography to GSAP. Asked for 3D, it ships real Three.js scenes with cleanup and a 2D fallback. Every route must register plugins once, clean up on unmount, and respect <code class="inline-code">prefers-reduced-motion</code>.</p>
+      <p class="eyebrow packsub"><span class="red">MOTION ROUTER</span> · MOTION + ANIME.JS — THE RIGHT TOOL, NOT A STACK</p>
+      <div class="gskills">
+        <div class="gskill">
+          <span class="gskill__name">motion</span>
+          <span class="gskill__do">Declarative UI, gestures, layout animation, springs, scroll and React/Vue integration.</span>
+          <span class="gskill__when">Loads when the interface is component-driven and state-aware.</span>
+        </div>
+        <div class="gskill">
+          <span class="gskill__name">animejs</span>
+          <span class="gskill__do">Anime.js v4 for compact DOM, CSS, SVG, JavaScript-object and stagger sequences.</span>
+          <span class="gskill__when">Loads when a focused sequence needs a small, controllable animation engine.</span>
+        </div>
+      </div>
       <div class="gskills">
         <div class="gskill">
           <span class="gskill__name">gsap-core</span>

@@ -72,13 +72,13 @@
           "@type": "HowToStep",
           "position": 1,
           "name": "Get the pack",
-          "text": "Download redline-gsap.zip — the REDLINE discipline plus eight official GSAP skills and ten official Three.js skills, ready to drop in. Plain markdown, nothing to build."
+          "text": "Download redline-gsap.zip — the REDLINE master skill plus Motion, Anime.js v4, eight official GSAP skills, and ten official Three.js skills, ready to drop in. Plain markdown, nothing to build."
         },
         {
           "@type": "HowToStep",
           "position": 2,
           "name": "Put it in the agent's skills folder",
-          "text": "Unzip the archive, copy REDLINE-SKILL.md into the agent's skills folder as SKILL.md, and copy each gsap-*/ and threejs-*/ folder the same way."
+          "text": "Unzip the archive, copy REDLINE-SKILL.md into the agent's skills folder as SKILL.md, and copy motion/, animejs/, gsap-*/, and threejs-*/ the same way."
         },
         {
           "@type": "HowToStep",
@@ -148,7 +148,7 @@
           <span class="dstep__no">01</span>
           <div>
             <h3>Get the pack</h3>
-            <p data-i18n="d1.p"><code class="inline-code">redline-gsap.zip</code> — the discipline plus the two packs: eight official GSAP skills and ten official Three.js skills, ready to drop in. Plain markdown, nothing to build. Or take just the skill file from your opencode install at <code class="inline-code">~/.config/opencode/skills/redline/SKILL.md</code>.</p>
+            <p data-i18n="d1.p"><code class="inline-code">redline-gsap.zip</code> — the master discipline plus Motion, Anime.js v4, eight official GSAP skills and ten official Three.js skills, ready to drop in. Plain markdown, nothing to build. Or take just the skill file from your opencode install at <code class="inline-code">~/.config/opencode/skills/redline/SKILL.md</code>.</p>
             <div style="margin-top:16px; display:flex; flex-wrap:wrap; gap:10px">
               <a class="btn btn--primary" href="redline-gsap.zip" download>Download the pack (.zip) <span class="arrow">↓</span></a>
               <a class="btn" href="REDLINE-SKILL.md" download>Just REDLINE-SKILL.md</a>
@@ -164,15 +164,15 @@
             <div class="terminal" style="margin-top:14px">
               <div class="terminal__bar"><i></i><i></i><i></i><span>opencode · bash</span></div>
               <div class="terminal__body">
-                <div><span class="p">$</span> unzip redline-gsap.zip <span class="c"># discipline + GSAP + Three.js packs</span></div>
+                <div><span class="p">$</span> unzip redline-gsap.zip <span class="c"># master skill + Motion + Anime.js + GSAP + Three.js</span></div>
                 <div><span class="p">$</span> mkdir -p ~/.config/opencode/skills/redline</div>
                 <div><span class="p">$</span> cp REDLINE-SKILL.md ~/.config/opencode/skills/redline/SKILL.md</div>
-                <div><span class="p">$</span> cp -r skills/gsap-* skills/threejs-* ~/.config/opencode/skills/</div>
+                <div><span class="p">$</span> cp -r skills/motion skills/animejs skills/gsap-* skills/threejs-* ~/.config/opencode/skills/</div>
                 <div><span class="p">$</span> <span class="c"># register each in the lazy-load index (one line):</span></div>
                 <div><span class="p">$</span> <span class="hl">~/.local/share/opencode/skills-index.md</span> → add rows</div>
               </div>
             </div>
-            <p style="margin-top:12px" data-i18n="d2.p2">For other agents — Claude Code, Hermes, Cursor, custom pipelines — same idea: <code class="inline-code">REDLINE-SKILL.md</code> goes wherever that agent reads its skill documents, and each <code class="inline-code">skills/gsap-*</code> and <code class="inline-code">skills/threejs-*</code> folder follows the same rule. If the agent accepts plain markdown prompts, paste the file contents directly — the discipline needs no runtime.</p>
+            <p style="margin-top:12px" data-i18n="d2.p2">For other agents — Claude Code, Hermes, Cursor, custom pipelines — same idea: <code class="inline-code">REDLINE-SKILL.md</code> goes wherever that agent reads its skill documents, and each <code class="inline-code">skills/motion</code>, <code class="inline-code">skills/animejs</code>, <code class="inline-code">skills/gsap-*</code>, and <code class="inline-code">skills/threejs-*</code> folder follows the same rule. If the agent accepts plain markdown prompts, paste the file contents directly — the discipline needs no runtime.</p>
           </div>
         </article>
 
@@ -203,8 +203,8 @@
           <h2>One pack, both agents<span class="period">.</span></h2>
           <p>You do not need a different version for Hermes. Send the same zip:</p>
           <div class="installbox__steps">
-            <div><span class="n">→</span><span data-i18n="hs1"><code class="inline-code">redline-gsap.zip</code> — REDLINE + 8 GSAP + 10 Three.js skills, one archive (also in <code class="inline-code">~/Downloads</code>)</span></div>
-            <div><span class="n">→</span><span data-i18n="hs2">Unzip into Hermes&rsquo; skills folder — <code class="inline-code">redline/SKILL.md</code> + <code class="inline-code">gsap-*/SKILL.md</code> + <code class="inline-code">threejs-*/SKILL.md</code></span></div>
+            <div><span class="n">→</span><span data-i18n="hs1"><code class="inline-code">redline-gsap.zip</code> — REDLINE + Motion + Anime.js + 8 GSAP + 10 Three.js skills, one archive</span></div>
+            <div><span class="n">→</span><span data-i18n="hs2">Unzip into Hermes&rsquo; skills folder — <code class="inline-code">redline/SKILL.md</code> + <code class="inline-code">motion/</code> + <code class="inline-code">animejs/</code> + <code class="inline-code">gsap-*/</code> + <code class="inline-code">threejs-*/</code></span></div>
             <div><span class="n">→</span><span data-i18n="hs3">Register each skill in its index (if it has one), then restart the session</span></div>
           </div>
         </div>
@@ -212,10 +212,10 @@
           <div class="terminal__bar"><i></i><i></i><i></i><span>to: hermes</span></div>
           <div class="terminal__body">
             <div><span class="c"># send this</span></div>
-            <div><span class="hl">redline-gsap.zip</span> · 19 skills inside</div>
+            <div><span class="hl">redline-gsap.zip</span> · 21 skills inside</div>
             <div>&nbsp;</div>
             <div><span class="c"># then one instruction:</span></div>
-            <div style="color:var(--ink)">“Install REDLINE plus its GSAP and Three.js packs. REDLINE is</div>
+            <div style="color:var(--ink)">“Install REDLINE plus its Motion, Anime.js, GSAP, and Three.js packs. REDLINE is</div>
             <div style="color:var(--ink)">a design discipline: read it before any interface</div>
             <div style="color:var(--ink)">design, and apply its gates to every result —</div>
             <div style="color:var(--ink)">motion and 3D included.”</div>
